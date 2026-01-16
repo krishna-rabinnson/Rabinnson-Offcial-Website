@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import { ToCompanyEmail } from '@/emails/templates/toCompany';
 import { ToUserEmail } from '@/emails/templates/toUser';
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
+const RESEND_API_KEY = "re_3wsMM4jZ_DeQwUrHxUzqNbv96r6RpVchk";
 
 
 

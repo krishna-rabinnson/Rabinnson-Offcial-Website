@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import { ToCompanyContact } from '@/emails/templates/toCompanyContact';
 import { ToUserContact } from '@/emails/templates/toUserContact';
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
+const RESEND_API_KEY = "re_3wsMM4jZ_DeQwUrHxUzqNbv96r6RpVchk";
 const resend = new Resend(RESEND_API_KEY || '');
 
 type ContactPayload = {

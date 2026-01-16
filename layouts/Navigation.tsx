@@ -66,12 +66,13 @@ function CollapsibleSection({
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="w-full flex items-center justify-between text-left text-[13px] uppercase tracking-[0.12em] text-[#858585] hover:text-white transition-colors"
+        className="w-full flex items-center justify-between text-left text-[13px] uppercase tracking-[0.12em] text-white hover:text-white transition-colors"
       >
         <span>{section.heading}</span>
         <ChevronDown
-          className={`w-3 h-3 ml-2 transition-transform duration-150 ${open ? "rotate-180" : "rotate-0"
-            }`}
+          className={`w-3 h-3 ml-2 transition-transform duration-150 ${
+            open ? "rotate-180" : "rotate-0"
+          }`}
         />
       </button>
 
@@ -82,7 +83,7 @@ function CollapsibleSection({
               key={j}
               href={link.path}
               onClick={() => onNavItemClick?.()}
-              className="block text-[14px] leading-[1.4] transition-colors text-[#C7C7C7] hover:text-white"
+              className="block text-[14px] leading-[1.4] transition-colors text-white hover:text-white"
             >
               {link.label}
             </Link>
@@ -173,38 +174,38 @@ function MegaMenuRenderer({
     menuKey === "start"
       ? "/start-business"
       : menuKey === "whoWeAre"
-        ? "/about"
-        : menuKey === "manageBusiness"
-          ? "/manage-business"
-          : menuKey === "services"
-            ? "/services"
-            : menuKey === "industry"
-              ? "/industry"
-              : menuKey === "platforms"
-                ? "/platforms"
-                : `/${menuKey}`;
+      ? "/about"
+      : menuKey === "manageBusiness"
+      ? "/manage-business"
+      : menuKey === "services"
+      ? "/services"
+      : menuKey === "industry"
+      ? "/industry"
+      : menuKey === "platforms"
+      ? "/platforms"
+      : `/${menuKey}`;
 
   const gridColumnsClass =
     columns === 3
       ? "grid-cols-3"
       : columns === 4
-        ? "grid-cols-4"
-        : "grid-cols-3";
+      ? "grid-cols-4"
+      : "grid-cols-3";
 
   const displayName =
     menuKey === "start"
       ? "Start"
       : menuKey === "whoWeAre"
-        ? "Who we are"
-        : menuKey === "manageBusiness"
-          ? "Manage"
-          : menuKey === "services"
-            ? "Grow"
-            : menuKey === "industry"
-              ? "Industry"
-              : menuKey === "platforms"
-                ? "Platform"
-                : menuKey;
+      ? "Who we are"
+      : menuKey === "manageBusiness"
+      ? "Manage"
+      : menuKey === "services"
+      ? "Grow"
+      : menuKey === "industry"
+      ? "Industry"
+      : menuKey === "platforms"
+      ? "Platform"
+      : menuKey;
 
   const parentRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -287,8 +288,9 @@ function MegaMenuRenderer({
           triggerHide();
           onNavItemClick?.();
         }}
-        className={`cursor-pointer text-[12px] xl:text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 flex items-center gap-0.5 xl:gap-1 ${isActive ? "text-white font-semibold" : "text-[#8D8D8D] font-normal"
-          } hover:text-white`}
+        className={`cursor-pointer text-[12px] xl:text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 flex items-center gap-0.5 xl:gap-1 ${
+          isActive ? "text-white font-semibold" : "text-white font-normal"
+        } hover:text-white`}
       >
         <span>{displayName}</span>
         <ChevronDown className="w-3 h-3 ml-0.5 xl:ml-1 transition-transform duration-150 group-hover:rotate-180" />
@@ -297,16 +299,15 @@ function MegaMenuRenderer({
       <div
         ref={menuRef}
         style={{ ...menuStyle, transitionDuration: `${hideDelay}ms` }}
+        /* temporary test: extremely large to make the change obvious */
         className={
-          `fixed rounded-3xl bg-[#111111]/95 border border-[#262626] shadow-[0_32px_60px_rgba(0,0,0,0.80)] py-6 px-0 transition-all ease-out z-[50] backdrop-blur-md ` +
-          // base invisible/visible control via group-hover
+          `fixed rounded-3xl bg-[#111111]/95 border border-[#262626] shadow-[0_32px_60px_rgba(0,0,0,0.80)] py-6 px-0 transition-all ease-out z-[50] backdrop-blur-md text-[28px] ` +
           `invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 ` +
-          // when explicitly hiding we force visible + animate to opacity-0/translate up
-          `${isHiding
-            ? "visible opacity-0 -translate-y-2 pointer-events-none"
-            : ""
+          `${
+            isHiding
+              ? "visible opacity-0 -translate-y-2 pointer-events-none"
+              : ""
           } ` +
-          // when forced hidden, hide from layout (display: none)
           `${forceHide ? "hidden" : ""}`
         }
       >
@@ -335,7 +336,7 @@ function MegaMenuRenderer({
                             triggerHide();
                             onNavItemClick?.();
                           }}
-                          className="block text-[14px] leading-[1.4] transition-colors text-[#C7C7C7] hover:text-white"
+                          className="block text-[14px] leading-[1.4] transition-colors text-white/90 hover:text-white"
                         >
                           {link.label}
                         </Link>
@@ -406,7 +407,7 @@ export default function Navigation({
               key={index}
               href={item.path}
               onClick={() => onNavItemClick?.()}
-              className="cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 text-[#8D8D8D] font-normal hover:text-white"
+              className="cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 text-white font-normal hover:text-white"
             >
               {item.name}
             </Link>

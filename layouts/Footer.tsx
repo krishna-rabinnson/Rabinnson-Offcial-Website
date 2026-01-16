@@ -30,7 +30,8 @@ export default function Footer() {
               Drive Quality Leads, Maximize Growth, Convert More Customers!
             </div>
             <div className="text-[#fff] text-[14px]">
-              Boost your business with targeted strategies that attract high-quality leads, enhance conversions, and accelerate
+              Boost your business with targeted strategies that attract
+              high-quality leads, enhance conversions, and accelerate
             </div>
           </div>
           <Link href="/contact">
@@ -50,8 +51,9 @@ export default function Footer() {
               className="w-full h-auto"
             />
 
-            <div className="font-medium text-white leading-[24px]">
-              We Drive Real Result, More Traffic, More Leads, more Growth!
+            <div className="font-medium text-white leading-[20px]">
+              WeWork, 13th Floor, Building No 9, IT Park, Shaikpet, Hi Tech
+              City, Hyderabad -500081, Telangana State
             </div>
             <div className="flex items-center gap-[15px]">
               <div className="bg-[#1D1D1D] rounded-full p-[10px]">
@@ -71,10 +73,18 @@ export default function Footer() {
             <div>
               <div className="text-[#8D8D8D] mb-[24px]">Main Menu</div>
               <div className="flex flex-col items-start gap-[16px] text-white">
-                <Link href="/about" className="cursor-pointer">About Us</Link>
-                <Link href="/portofolio" className="cursor-pointer">Portofolio</Link>
-                <Link href="/services" className="cursor-pointer">Services</Link>
-                <Link href="/pricing" className="cursor-pointer">Pricing</Link>
+                <Link href="/about" className="cursor-pointer">
+                  About Us
+                </Link>
+                <Link href="/portofolio" className="cursor-pointer">
+                  Portofolio
+                </Link>
+                <Link href="/services" className="cursor-pointer">
+                  Services
+                </Link>
+                <Link href="/" className="cursor-pointer">
+                  Pricing
+                </Link>
                 <div className="cursor-pointer">Testimonial</div>
               </div>
             </div>
