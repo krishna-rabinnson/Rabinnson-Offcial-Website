@@ -3,8 +3,15 @@ import { Resend } from 'resend';
 import { ToCompanyContact } from '@/emails/templates/toCompanyContact';
 import { ToUserContact } from '@/emails/templates/toUserContact';
 
-const RESEND_API_KEY = "re_3wsMM4jZ_DeQwUrHxUzqNbv96r6RpVchk";
-const resend = new Resend(RESEND_API_KEY || '');
+// Read key from environment at runtime. Do NOT construct the client at module load
+// time because the Resend constructor throws when the key is missing which
+// breaks Next.js builds that import this module for page-data collection.
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
+
+function getResendClient() {
+  if (!RESEND_API_KEY) return null;
+  return new Resend(RESEND_API_KEY);
+}
 
 type ContactPayload = {
   firstName: string;
@@ -44,6 +51,14 @@ export async function POST(req: Request) {
 
     const companyHtml = '<!doctype html>' + renderToStaticMarkup(ReactLib.createElement(ToCompanyContact, payload as any));
     const userHtml = '<!doctype html>' + renderToStaticMarkup(ReactLib.createElement(ToUserContact, { firstName: payload.firstName }));
+
+
+    // Ensure API key is configured and create the client lazily.
+    if (!RESEND_API_KEY) {
+      return new Response(JSON.stringify({ error: 'Resend API key is not configured on the server' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+    }
+
+    const resend = getResendClient()!;
 
     // Send using verified sender (your Resend account sender)
     const sendErrors: string[] = [];

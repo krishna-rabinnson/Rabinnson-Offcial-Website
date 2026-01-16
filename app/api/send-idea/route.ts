@@ -3,12 +3,13 @@ import { Resend } from 'resend';
 import { ToCompanyEmail } from '@/emails/templates/toCompany';
 import { ToUserEmail } from '@/emails/templates/toUser';
 
-const RESEND_API_KEY = "re_3wsMM4jZ_DeQwUrHxUzqNbv96r6RpVchk";
+// Use env var at runtime and create the Resend client lazily to avoid build-time exceptions
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
-
-
-
-const resend = new Resend(RESEND_API_KEY || '');
+function getResendClient() {
+  if (!RESEND_API_KEY) return null;
+  return new Resend(RESEND_API_KEY);
+}
 
 type IdeaPayload = {
   fullName: string;
@@ -74,7 +75,8 @@ export async function POST(req: Request) {
     // Render React email to HTML on the server and send the HTML string.
     const companyHtml = '<!doctype html>' + renderToStaticMarkup(ReactLib.createElement(ToCompanyEmail, payload as any));
 
-  
+    const resend = getResendClient()!;
+
     const sendErrors: string[] = [];
     try {
       await resend.emails.send({
