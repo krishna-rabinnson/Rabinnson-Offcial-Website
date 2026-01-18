@@ -2,7 +2,7 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Accordion, { AccordionData } from "@/components/accordion";
 import Image from "next/image";
-import Builder from '@/assets/images/builder.webp';
+import Builder from '@/assets/images/consysmindlanding.png';
 
 export default function Faq() {
     const accordionData: AccordionData[] = [
@@ -51,8 +51,8 @@ export default function Faq() {
                 <div className="hidden lg:flex flex-col">
                     <div className="flex justify-between items-end self-stretch">
                         <div>
-                            <Typography color="#8D8D8D" noDarkMode>Web Design</Typography>
-                            <Typography color="#070707" weight={600} className="mt-[4px]">CHARLOTTE AI</Typography>
+                            <Typography color="#8D8D8D" noDarkMode>Product Design</Typography>
+                            <Typography color="#070707" weight={600} className="mt-[4px]">CONSYSMIND</Typography>
                         </div>
                         <Typography color="#070707">24 Feb</Typography>
                     </div>

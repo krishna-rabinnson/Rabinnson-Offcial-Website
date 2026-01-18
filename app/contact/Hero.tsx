@@ -7,6 +7,8 @@ import Avatar2 from '@/assets/images/avatar-2.webp';
 import Avatar3 from '@/assets/images/avatar-3.webp';
 import Avatar4 from '@/assets/images/avatar-4.webp';
 import Image from "next/image";
+import { MapPin } from "lucide-react";
+
 export default function Hero() {
     return (
         <HeroBackground>
@@ -56,6 +58,77 @@ export default function Hero() {
                         <div className="flex flex-col items-start gap-[4px]">
                             <Typography color="#070707" size={20} weight={700}>Call Us</Typography>
                             <Typography color="#070707" size={14} weight={400} className="underline">+91 96689-01245</Typography>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Head Office Section */}
+            <div className="w-full mt-[48px] md:mt-[72px]">
+                <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-center">
+                    <Typography as="div" color="#070707" size={24} sizeMobile={20} weight={600} className="mb-[24px] text-center">
+                        Head Office
+                    </Typography>
+                    <div className="w-full max-w-[500px] bg-white/95 dark:bg-[#1D1D1D] backdrop-blur-sm rounded-[16px] p-[28px] md:p-[32px] shadow-xl border border-[#1146F2]/20">
+                        <div className="flex items-start gap-[20px]">
+                            <div className="bg-[#003A5C] rounded-[12px] p-[14px] flex-shrink-0">
+                                <MapPin className="w-[24px] h-[24px] text-white" />
+                            </div>
+                            <div className="flex flex-col gap-[8px]">
+                                <Typography color="#070707" size={20} sizeMobile={18} weight={700}>Hyderabad Office</Typography>
+                                <Typography color="#5A5A5A" size={15} sizeMobile={14} weight={400} lineHeight={24}>
+                                    WeWork, 13th Floor, Building No 9,<br />
+                                    IT Park, Shaikpet, Hi Tech City,<br />
+                                    Hyderabad – 500081,<br />
+                                    Telangana State, India
+                                </Typography>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Branch Offices Section */}
+            <div className="w-full mt-[32px] md:mt-[48px]">
+                <div className="w-full lg:w-[80%] lg:mx-auto flex flex-col items-center">
+                    <Typography as="div" color="#070707" size={24} sizeMobile={20} weight={600} className="mb-[24px] text-center">
+                        Branch Offices
+                    </Typography>
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[24px] max-w-[900px]">
+                        {/* Mumbai Office */}
+                        <div className="bg-white/90 dark:bg-[#1D1D1D] backdrop-blur-sm rounded-[16px] p-[24px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="flex items-start gap-[16px]">
+                                <div className="bg-[#1146F2] rounded-[10px] p-[10px] flex-shrink-0">
+                                    <MapPin className="w-[20px] h-[20px] text-white" />
+                                </div>
+                                <div className="flex flex-col gap-[8px]">
+                                    <Typography color="#070707" size={18} weight={600}>Mumbai Office</Typography>
+                                    <Typography color="#5A5A5A" size={14} weight={400} lineHeight={22}>
+                                        WeWork, Unit 212, 6th Floor,<br />
+                                        Hiranandani Business Park,<br />
+                                        Powai, Mumbai – 400072,<br />
+                                        Maharashtra, India
+                                    </Typography>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Bhubaneswar Office */}
+                        <div className="bg-white/90 dark:bg-[#1D1D1D] backdrop-blur-sm rounded-[16px] p-[24px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="flex items-start gap-[16px]">
+                                <div className="bg-[#1146F2] rounded-[10px] p-[10px] flex-shrink-0">
+                                    <MapPin className="w-[20px] h-[20px] text-white" />
+                                </div>
+                                <div className="flex flex-col gap-[8px]">
+                                    <Typography color="#070707" size={18} weight={600}>Bhubaneswar Office</Typography>
+                                    <Typography color="#5A5A5A" size={14} weight={400} lineHeight={22}>
+                                        Coworking-SRB Tower,<br />
+                                        SRB Towers, 1st & 2nd Floor,<br />
+                                        E-12, Infocity, Patia,<br />
+                                        Bhubaneswar – 751024
+                                    </Typography>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

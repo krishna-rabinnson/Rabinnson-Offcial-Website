@@ -8,24 +8,24 @@ import Button from "@/components/button";
 import Typography from "@/components/typography";
 import HeroBackground from "@/components/HeroBackground";
 
-import Avatar1 from '@/assets/images/avatar-1.webp';
-import Avatar2 from '@/assets/images/avatar-2.webp';
-import Avatar3 from '@/assets/images/avatar-3.webp';
-import Avatar4 from '@/assets/images/avatar-4.webp';
-import SliderPorto1 from '@/assets/images/slider-porto-1.webp';
-import SliderPorto2 from '@/assets/images/slider-porto-2.webp';
-import SliderPorto3 from '@/assets/images/slider-porto-3.webp';
-import SliderPorto4 from '@/assets/images/slider-porto-4.webp';
-import SliderPorto5 from '@/assets/images/slider-porto-5.webp';
-import SliderPorto6 from '@/assets/images/slider-porto-6.webp';
+import Avatar1 from '@/assets/images/avatar-1.png';
+import Avatar2 from '@/assets/images/avatar-2.png';
+import Avatar3 from '@/assets/images/avatar-3.png';
+import Avatar4 from '@/assets/images/avatar-4.png';
+import SliderPorto1 from '@/assets/images/slider-porto-1.png';
+import SliderPorto2 from '@/assets/images/slider-porto-2.png';
+import SliderPorto3 from '@/assets/images/fintech-photo.webp';
+import SliderPorto4 from '@/assets/images/slider-porto-4.png';
+import SliderPorto5 from '@/assets/images/consysmindlanding.png';
+import SliderPorto6 from '@/assets/images/slider-porto-6.png';
 import Link from "next/link";
 import Image from "next/image";
 const sliders = [
     { src: SliderPorto1, alt: "SliderPorto1", title: "Web Design", name: "Lumina", date: "24 Feb" },
     { src: SliderPorto2, alt: "SliderPorto2", title: "Web Design", name: "Builder", date: "24 Feb" },
-    { src: SliderPorto3, alt: "SliderPorto3", title: "Web Design", name: "Emperhia", date: "24 Feb" },
+    { src: SliderPorto3, alt: "SliderPorto3", title: "Web Design", name: "Fintech", date: "24 Feb" },
     { src: SliderPorto4, alt: "SliderPorto4", title: "Web Design", name: "YSL", date: "24 Feb" },
-    { src: SliderPorto5, alt: "SliderPorto5", title: "Product Design", name: "luxious", date: "24 Feb" },
+    { src: SliderPorto5, alt: "SliderPorto5", title: "Product Design", name: "CONSYSMIND", date: "24 Feb" },
     { src: SliderPorto6, alt: "SliderPorto6", title: "Web Design", name: "victory gym", date: "24 Feb" },
 ];
 
