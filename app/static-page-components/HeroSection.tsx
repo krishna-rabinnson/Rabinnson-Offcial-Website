@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import { OptimizedImage } from '@/components/OptimizedImage';
 import Link from 'next/link';
 import HeroBackground from "@/components/HeroBackground";
 import Typography from "@/components/typography";
 import Button from "@/components/button";
-import Avatar1 from "@/assets/images/avatar-1.png";
-import Avatar2 from "@/assets/images/avatar-2.png";
-import Avatar3 from "@/assets/images/avatar-3.png";
-import Avatar4 from "@/assets/images/avatar-4.png";
+import Avatar1 from "@/assets/images/avatar-1.webp";
+import Avatar2 from "@/assets/images/avatar-2.webp";
+import Avatar3 from "@/assets/images/avatar-3.webp";
+import Avatar4 from "@/assets/images/avatar-4.webp";
 import { HeroContent } from "./types";
 
 interface HeroSectionProps {
@@ -20,10 +20,10 @@ export function HeroSection({ content }: HeroSectionProps) {
                 <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
                     <div className="flex flex-col items-start gap-[12px] pt-[24px]">
                         <div className="flex items-center">
-                            <Image src={Avatar1} alt="Avatar1" className="w-[32px]" />
-                            <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]" />
-                            <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]" />
-                            <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]" />
+                            <OptimizedImage src={Avatar1} alt="Avatar1" className="w-[32px]" width={32} height={32} priority />
+                            <OptimizedImage src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
+                            <OptimizedImage src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
+                            <OptimizedImage src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
                         </div>
                         <Typography color="#fff" noDarkMode className="md:hidden">
                             {content.mobileLabel || "Trusted by Thousands"}

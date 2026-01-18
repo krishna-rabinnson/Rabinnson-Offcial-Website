@@ -10,17 +10,17 @@ import Typography from "@/components/typography";
 import Button from "@/components/button";
 import HeroBackground from "@/components/HeroBackground";
 
-import Avatar1 from "@/assets/images/avatar-1.png";
-import Avatar2 from "@/assets/images/avatar-2.png";
-import Avatar3 from "@/assets/images/avatar-3.png";
-import Avatar4 from "@/assets/images/avatar-4.png";
+import Avatar1 from "@/assets/images/avatar-1.webp";
+import Avatar2 from "@/assets/images/avatar-2.webp";
+import Avatar3 from "@/assets/images/avatar-3.webp";
+import Avatar4 from "@/assets/images/avatar-4.webp";
 
-import Partner1 from "@/assets/images/Partners-1.png";
-import Partner2 from "@/assets/images/Partners-2.png";
-import Partner3 from "@/assets/images/Partners-3.png";
-import Partner4 from "@/assets/images/Partners-4.png";
-import Partner5 from "@/assets/images/Partners-5.png";
-import Partner6 from "@/assets/images/Partners-6.png";
+import Partner1 from "@/assets/images/Partners-1.webp";
+import Partner2 from "@/assets/images/Partners-2.webp";
+import Partner3 from "@/assets/images/Partners-3.webp";
+import Partner4 from "@/assets/images/Partners-4.webp";
+import Partner5 from "@/assets/images/Partners-5.webp";
+import Partner6 from "@/assets/images/Partners-6.webp";
 
 const images = [
   { src: Partner1, alt: "Partner1" },

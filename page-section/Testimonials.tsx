@@ -20,21 +20,21 @@ const testimonials: Testimonial[] = [
     role: "Nursing Assistant",
     message:
       "Our business experienced a significant transformation thanks to this team’s digital marketing expertise. They delivered tangible improvements in our online visibility.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    avatar: "https://randomuser.me/api/portraits/women/44.webp",
   },
   {
     name: "John Doe",
     role: "Marketing Manager",
     message:
       "Their innovative strategies and attention to detail made a huge difference in our campaign performance. Truly outstanding work!",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/32.webp",
   },
   {
     name: "Lina Kusuma",
     role: "Founder @StartupID",
     message:
       "Pelayanan cepat, profesional, dan sangat membantu bisnis kami berkembang di dunia digital.",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar: "https://randomuser.me/api/portraits/women/68.webp",
   },
 ];
 

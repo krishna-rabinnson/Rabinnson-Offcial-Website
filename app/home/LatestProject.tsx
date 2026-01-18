@@ -17,7 +17,7 @@ export default function LatestProject() {
                     </Tag>
                     <div className="text-[32px] md:text-[48px] font-bold leading-[41.6px] md:leading-[56px] text-[#070707] dark:text-[#fff]">
                         Showcasing Creativity, <br />
-                        Inspiring <Image src={Eclipse} alt="Eclipse" className="inline w-10 md:w-20" /> Possibilities
+                        Inspiring <OptimizedImage src={Eclipse} alt="Eclipse" className="inline w-10 md:w-20" width={80} height={80} /> Possibilities
                     </div>
                 </div>
                 <div className="flex gap-[10px] border-b border-[#070707] dark:border-[#fff] cursor-pointer">

@@ -7,9 +7,9 @@ import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
-import Services1 from '@/assets/images/service-1.png';
-import Services2 from '@/assets/images/service-2.png';
-import Services3 from '@/assets/images/service-3.png';
+import Services1 from '@/assets/images/service-1.webp';
+import Services2 from '@/assets/images/service-2.webp';
+import Services3 from '@/assets/images/service-3.webp';
 
 
 export default function Services() {

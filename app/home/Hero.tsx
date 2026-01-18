@@ -3,12 +3,12 @@ import HeroBackground from "@/components/HeroBackground";
 import Typography from "@/components/typography";
 import Button from "@/components/button";
 import Icons from "@/components/icon";
-import Image from "next/image";
-import Avatar1 from '@/assets/images/avatar-1.png';
-import Avatar2 from '@/assets/images/avatar-2.png';
-import Avatar3 from '@/assets/images/avatar-3.png';
-import Avatar4 from '@/assets/images/avatar-4.png';
-import Givenchy from '@/assets/images/consysmindlanding.png';
+import { OptimizedImage } from "@/components/OptimizedImage";
+import Avatar1 from '@/assets/images/avatar-1.webp';
+import Avatar2 from '@/assets/images/avatar-2.webp';
+import Avatar3 from '@/assets/images/avatar-3.webp';
+import Avatar4 from '@/assets/images/avatar-4.webp';
+import Givenchy from '@/assets/images/consysmindlanding.webp';
 
 interface HeroProps {
     onScrollToTestimonials?: () => void;
@@ -33,10 +33,10 @@ export default function Hero({ onScrollToTestimonials }: HeroProps) {
                 </div>
                 <div className="flex flex-col items-start lg:items-end gap-[12px] pt-[24px] order-1 lg:order-2">
                     <div className="flex items-center">
-                        <Image src={Avatar1} alt="Avatar1" className="w-[32px]" />
-                        <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]" />
-                        <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]" />
-                        <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]" />
+                        <OptimizedImage src={Avatar1} alt="Avatar1" className="w-[32px]" width={32} height={32} priority />
+                        <OptimizedImage src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
+                        <OptimizedImage src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
+                        <OptimizedImage src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]" width={32} height={32} priority />
                     </div>
                     <Typography color="#fff" noDarkMode>Client Worldwide</Typography>
                 </div>
@@ -79,7 +79,7 @@ export default function Hero({ onScrollToTestimonials }: HeroProps) {
                             </div>
                             <Typography color="#070707">1 Jan 2026</Typography>
                         </div>
-                        <Image src={Givenchy} alt="Givenchy" className="w-full md:w-[270px] rounded mt-[12px]" />
+                        <OptimizedImage src={Givenchy} alt="Givenchy" className="w-full md:w-[270px] rounded mt-[12px]" width={270} height={180} priority />
                     </div>
                 </div>
             </div>

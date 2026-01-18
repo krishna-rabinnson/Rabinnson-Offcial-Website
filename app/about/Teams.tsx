@@ -2,11 +2,11 @@ import Carousel, { Member } from "@/components/carousel";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 
-import Team1 from "@/assets/images/team-1.png";
-import Team2 from "@/assets/images/team-2.png";
-import Team3 from "@/assets/images/team-3.png";
-import Team4 from "@/assets/images/team-4.png";
-import Team5 from "@/assets/images/team-5.png";
+import Team1 from "@/assets/images/team-1.webp";
+import Team2 from "@/assets/images/team-2.webp";
+import Team3 from "@/assets/images/team-3.webp";
+import Team4 from "@/assets/images/team-4.webp";
+import Team5 from "@/assets/images/team-5.webp";
 
 const members: Member[] = [
   { name: "Cameron Williamson", experience: "8+ Years", image: Team1, position: "Project Manager" },

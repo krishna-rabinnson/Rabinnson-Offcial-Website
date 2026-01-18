@@ -8,9 +8,9 @@ import Image from "next/image";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 
-import Group from '@/assets/images/group.png';
-import Cash from '@/assets/images/cash.png';
-import Target from '@/assets/images/target.png';
+import Group from '@/assets/images/group.webp';
+import Cash from '@/assets/images/cash.webp';
+import Target from '@/assets/images/target.webp';
 
 export default function AboutUs() {
     const { theme } = useTheme();

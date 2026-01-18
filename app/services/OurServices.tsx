@@ -6,11 +6,11 @@ import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
-import Services1 from '@/assets/images/service-1.png';
-import Services2 from '@/assets/images/service-2.png';
-import Services3 from '@/assets/images/service-3.png';
-import Services4 from '@/assets/images/service-4.png';
-import Services5 from '@/assets/images/service-5.png';
+import Services1 from '@/assets/images/service-1.webp';
+import Services2 from '@/assets/images/service-2.webp';
+import Services3 from '@/assets/images/service-3.webp';
+import Services4 from '@/assets/images/service-4.webp';
+import Services5 from '@/assets/images/service-5.webp';
 
 export default function OurServices() {
     
