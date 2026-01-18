@@ -1,66 +1,19 @@
 "use client";
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import Image from "next/image";
 import Typography from "@/components/typography";
 
-import Partner1 from "@/assets/images/Partners-1.png"
-import Partner2 from "@/assets/images/Partners-2.png"
-import Partner3 from "@/assets/images/Partners-3.png"
-import Partner4 from "@/assets/images/Partners-4.png"
-import Partner5 from "@/assets/images/Partners-5.png"
-import Partner6 from "@/assets/images/Partners-6.png"
-
-const images = [
-    { src: Partner1, alt: "Partner1" },
-    { src: Partner2, alt: "Partner2" },
-    { src: Partner3, alt: "Partner3" },
-    { src: Partner4, alt: "Partner4" },
-    { src: Partner5, alt: "Partner5" },
-    { src: Partner6, alt: "Partner6" },
-];
-
 export default function LogoPartners() {
-    const sliderRef = useRef<HTMLDivElement>(null);
-
-    useGSAP(() => {
-        if (!sliderRef.current) return;
-
-        const wrapper = sliderRef.current.querySelector(".slider-track") as HTMLDivElement;
-        if (!wrapper) return;
-
-        const totalWidth = wrapper.scrollWidth / 2;
-        gsap.to(wrapper, {
-            x: `-=${totalWidth}`,
-            duration: 20,
-            ease: "linear",
-            repeat: -1,
-            modifiers: {
-                x: (x) => {
-                    const current = parseFloat(x);
-                    return (current % totalWidth) + "px";
-                },
-            },
-        });
-    }, []);
-
     return (
-        <div className="bg-white dark:bg-[#070707] py-[48px] md:py-[60px] flex flex-col items-center gap-[32px]">
-            <Typography as="div" size={16} weight={500} className="text-center px-[40px]">Rabinnson Private Limited is used by over 69.000+ companies across the globe</Typography>
-            <div className="overflow-hidden w-full" ref={sliderRef}>
-                <div className="flex items-center gap-20 slider-track">
-                    {[...images, ...images].map((image, index) => (
-                        <Image
-                            key={index}
-                            src={image.src}
-                            alt={image.alt}
-                            className="w-[30%] md:w-[11%] flex-shrink-0"
-                        />
-                    ))}
-                </div>
+        <div className="bg-slate-50 dark:bg-[#0a0a0a] py-[20px] md:py-[24px]">
+            <div className="max-w-4xl mx-auto px-[20px] md:px-[40px]">
+                <Typography
+                    as="div"
+                    size={14}
+                    weight={500}
+                    className="text-center text-slate-500 dark:text-slate-400"
+                >
+                    Rabinnson Private Limited is used by over 69.000+ companies across the globe
+                </Typography>
             </div>
-
         </div>
     )
 }

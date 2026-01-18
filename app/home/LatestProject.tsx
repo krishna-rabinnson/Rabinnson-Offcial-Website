@@ -3,9 +3,9 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
 import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/Portfolio-1.png';
-import Portofolio2 from '@/assets/images/Portfolio-2.png';
-import Portofolio3 from '@/assets/images/Portfolio-3.png';
+import Portofolio1 from '@/assets/images/consysmindlanding.png';
+import Portofolio2 from '@/assets/images/fintech-photo.webp';
+import Portofolio3 from '@/assets/images/y2ff.png';
 
 export default function LatestProject() {
     return (
@@ -25,17 +25,35 @@ export default function LatestProject() {
                     <Icons name="arrowRight" className="w-5" />
                 </div>
             </div>
-            <div className="mt-[64px] grid grid-rows-[auto_1fr] gap-3">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div className="aspect-[16/9] w-full md:aspect-auto">
-                        <Image src={Portofolio1} alt="Portofolio1" className="w-full h-full object-cover" />
+            <div className="mt-[40px] md:mt-[64px] flex flex-col gap-3 sm:gap-4 md:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+                    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <Image
+                            src={Portofolio1}
+                            alt="Consysmind"
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 50vw"
+                            className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                        />
                     </div>
-                    <div className="aspect-[16/9] w-full md:aspect-auto">
-                        <Image src={Portofolio2} alt="Portofolio2" className="w-full h-full object-cover" />
+                    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <Image
+                            src={Portofolio2}
+                            alt="Fintech"
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 50vw"
+                            className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                        />
                     </div>
                 </div>
-                <div className="aspect-[16/9] w-full md:aspect-auto">
-                    <Image src={Portofolio3} alt="Portofolio3" className="w-full h-full object-cover" />
+                <div className="relative aspect-[16/9] sm:aspect-[16/7] md:aspect-[21/8] lg:aspect-[21/7] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <Image
+                        src={Portofolio3}
+                        alt="Y2F Hub"
+                        fill
+                        sizes="100vw"
+                        className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                    />
                 </div>
             </div>
         </div>

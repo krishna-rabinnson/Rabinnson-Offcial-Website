@@ -3,7 +3,7 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
 import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/Portfolio-1.png';
+import Portofolio1 from '@/assets/images/consysmindlanding.png';
 import Portofolio2 from '@/assets/images/Portfolio-2.png';
 import Portofolio3 from '@/assets/images/Portfolio-3.png';
 import Portofolio4 from '@/assets/images/Portfolio-4.png';
