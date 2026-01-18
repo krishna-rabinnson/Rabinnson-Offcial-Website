@@ -12,6 +12,11 @@
 
 # testing
 /coverage
+/__tests__/
+*.test.*
+*.spec.*
+vitest.config.*
+vitest.setup.*
 
 # next.js
 /.next/
@@ -35,6 +40,20 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# kiro specs and development files
+.kiro/
+/scripts/
+/docs/
+
+# development reports and analysis
+*-report.md
+final-requirements-compliance-report.md
+lighthouse-performance-summary.md
+cross-browser-testing-report.md
+
+# backup files
+/assets/images_backup/
 
 # typescript
 *.tsbuildinfo

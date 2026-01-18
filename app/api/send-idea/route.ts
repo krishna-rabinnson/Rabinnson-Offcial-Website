@@ -80,11 +80,11 @@ export async function POST(req: Request) {
     const sendErrors: string[] = [];
     try {
       await resend.emails.send({
-        from: 'Test App <onboarding@resend.dev>',
-        to: ['krishnakumahakul@gmail.com'],
+        from: 'Rabinnson <noreply@connect.rabinnson.com>',
+        to: [payload.email,'assitant@connect.rabinnson.com'],
         subject: `New idea submission — ${payload.fullName}`,
         html: companyHtml,
-        headers: { 'Reply-To': 'krishnakumarmahakul@gmail.com' },
+        headers: { 'Reply-To': 'response@rabinnson.com' },
       });
     } catch (err: any) {
       sendErrors.push(`company:${err?.message || String(err)}`);
@@ -97,11 +97,11 @@ export async function POST(req: Request) {
       const userHtml = '<!doctype html>' + renderToStaticMarkup(ReactLib.createElement(ToUserEmail, { firstName }));
       try {
         await resend.emails.send({
-          from: 'Test App <onboarding@resend.dev>',
-          to: [payload.email],
+          from: 'Rabinnson <noreply@connect.rabinnson.com>',
+          to: [payload.email,'assitant@connect.rabinnson.com'],
           subject: 'Thanks for your submission — Rabinnson',
           html: userHtml,
-          headers: { 'Reply-To': 'krishnakumahakul@gmail.com' },
+          headers: { 'Reply-To': 'response@rabinnson.com' },
         });
       } catch (err: any) {
         sendErrors.push(`user:${err?.message || String(err)}`);

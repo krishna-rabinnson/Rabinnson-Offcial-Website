@@ -2,15 +2,15 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Image from "next/image";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import Typography from "@/components/typography";
 
-import Partner1 from "@/assets/images/Partners-1.png"
-import Partner2 from "@/assets/images/Partners-2.png"
-import Partner3 from "@/assets/images/Partners-3.png"
-import Partner4 from "@/assets/images/Partners-4.png"
-import Partner5 from "@/assets/images/Partners-5.png"
-import Partner6 from "@/assets/images/Partners-6.png"
+import Partner1 from "@/assets/images/Partners-1.webp"
+import Partner2 from "@/assets/images/Partners-2.webp"
+import Partner3 from "@/assets/images/Partners-3.webp"
+import Partner4 from "@/assets/images/Partners-4.webp"
+import Partner5 from "@/assets/images/Partners-5.webp"
+import Partner6 from "@/assets/images/Partners-6.webp"
 
 const images = [
     { src: Partner1, alt: "Partner1" },
@@ -51,11 +51,13 @@ export default function LogoPartners() {
             <div className="overflow-hidden w-full" ref={sliderRef}>
                 <div className="flex items-center gap-20 slider-track">
                     {[...images, ...images].map((image, index) => (
-                        <Image
+                        <OptimizedImage
                             key={index}
                             src={image.src}
                             alt={image.alt}
                             className="w-[30%] md:w-[11%] flex-shrink-0"
+                            width={200}
+                            height={100}
                         />
                     ))}
                 </div>

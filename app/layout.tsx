@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Rabinnson Private Limited",
   description: "Rabinnson Private Limited is a leading provider of business solutions.",
   icons: {
-    icon: "/a.png",
+    icon: "/a.webp",
   },
 };
 

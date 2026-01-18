@@ -2,12 +2,12 @@ import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
-import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/Portfolio-1.png';
-import Portofolio2 from '@/assets/images/Portfolio-2.png';
-import Portofolio3 from '@/assets/images/Portfolio-3.png';
-import Portofolio4 from '@/assets/images/Portfolio-4.png';
-import Portofolio5 from '@/assets/images/Portfolio-5.png';
+import Eclipse from '@/assets/images/lates-project-eclipse.webp';
+import Portofolio1 from '@/assets/images/Portfolio-1.webp';
+import Portofolio2 from '@/assets/images/Portfolio-2.webp';
+import Portofolio3 from '@/assets/images/Portfolio-3.webp';
+import Portofolio4 from '@/assets/images/Portfolio-4.webp';
+import Portofolio5 from '@/assets/images/Portfolio-5.webp';
 
 export default function LatestProject() {
     return (

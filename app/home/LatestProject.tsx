@@ -1,11 +1,11 @@
 import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
-import Image from "next/image";
-import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/Portfolio-1.png';
-import Portofolio2 from '@/assets/images/Portfolio-2.png';
-import Portofolio3 from '@/assets/images/Portfolio-3.png';
+import { OptimizedImage } from "@/components/OptimizedImage";
+import Eclipse from '@/assets/images/lates-project-eclipse.webp';
+import Portofolio1 from '@/assets/images/Portfolio-1.webp';
+import Portofolio2 from '@/assets/images/Portfolio-2.webp';
+import Portofolio3 from '@/assets/images/Portfolio-3.webp';
 
 export default function LatestProject() {
     return (
@@ -17,7 +17,7 @@ export default function LatestProject() {
                     </Tag>
                     <div className="text-[32px] md:text-[48px] font-bold leading-[41.6px] md:leading-[56px] text-[#070707] dark:text-[#fff]">
                         Showcasing Creativity, <br />
-                        Inspiring <Image src={Eclipse} alt="Eclipse" className="inline w-10 md:w-20" /> Possibilities
+                        Inspiring <OptimizedImage src={Eclipse} alt="Eclipse" className="inline w-10 md:w-20" width={80} height={80} /> Possibilities
                     </div>
                 </div>
                 <div className="flex gap-[10px] border-b border-[#070707] dark:border-[#fff] cursor-pointer">
@@ -28,14 +28,14 @@ export default function LatestProject() {
             <div className="mt-[64px] grid grid-rows-[auto_1fr] gap-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div className="aspect-[16/9] w-full md:aspect-auto">
-                        <Image src={Portofolio1} alt="Portofolio1" className="w-full h-full object-cover" />
+                        <OptimizedImage src={Portofolio1} alt="Portofolio1" className="w-full h-full object-cover" width={800} height={600} />
                     </div>
                     <div className="aspect-[16/9] w-full md:aspect-auto">
-                        <Image src={Portofolio2} alt="Portofolio2" className="w-full h-full object-cover" />
+                        <OptimizedImage src={Portofolio2} alt="Portofolio2" className="w-full h-full object-cover" width={800} height={600} />
                     </div>
                 </div>
                 <div className="aspect-[16/9] w-full md:aspect-auto">
-                    <Image src={Portofolio3} alt="Portofolio3" className="w-full h-full object-cover" />
+                    <OptimizedImage src={Portofolio3} alt="Portofolio3" className="w-full h-full object-cover" width={1600} height={900} />
                 </div>
             </div>
         </div>

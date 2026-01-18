@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Rabinnson Private Limited",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Rabinnson Private Limited - Business Solutions",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
       "Complete business services: Registration, compliance, legal, tax & digital platforms. Trusted by businesses across India.",
     site: "@rabinnson",
     creator: "@rabinnson",
-    images: ["/og-image.png"],
+    images: ["/og-image.webp"],
   },
   robots: {
     index: true,

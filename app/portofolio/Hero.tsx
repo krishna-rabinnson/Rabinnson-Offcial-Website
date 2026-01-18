@@ -8,16 +8,16 @@ import Button from "@/components/button";
 import Typography from "@/components/typography";
 import HeroBackground from "@/components/HeroBackground";
 
-import Avatar1 from '@/assets/images/avatar-1.png';
-import Avatar2 from '@/assets/images/avatar-2.png';
-import Avatar3 from '@/assets/images/avatar-3.png';
-import Avatar4 from '@/assets/images/avatar-4.png';
-import SliderPorto1 from '@/assets/images/slider-porto-1.png';
-import SliderPorto2 from '@/assets/images/slider-porto-2.png';
-import SliderPorto3 from '@/assets/images/slider-porto-3.png';
-import SliderPorto4 from '@/assets/images/slider-porto-4.png';
-import SliderPorto5 from '@/assets/images/slider-porto-5.png';
-import SliderPorto6 from '@/assets/images/slider-porto-6.png';
+import Avatar1 from '@/assets/images/avatar-1.webp';
+import Avatar2 from '@/assets/images/avatar-2.webp';
+import Avatar3 from '@/assets/images/avatar-3.webp';
+import Avatar4 from '@/assets/images/avatar-4.webp';
+import SliderPorto1 from '@/assets/images/slider-porto-1.webp';
+import SliderPorto2 from '@/assets/images/slider-porto-2.webp';
+import SliderPorto3 from '@/assets/images/slider-porto-3.webp';
+import SliderPorto4 from '@/assets/images/slider-porto-4.webp';
+import SliderPorto5 from '@/assets/images/slider-porto-5.webp';
+import SliderPorto6 from '@/assets/images/slider-porto-6.webp';
 import Link from "next/link";
 import Image from "next/image";
 const sliders = [

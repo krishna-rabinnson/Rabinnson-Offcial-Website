@@ -2,7 +2,7 @@ import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Accordion, { AccordionData } from "@/components/accordion";
 import Image from "next/image";
-import Builder from '@/assets/images/builder.png';
+import Builder from '@/assets/images/builder.webp';
 
 export default function Faq() {
     const accordionData: AccordionData[] = [

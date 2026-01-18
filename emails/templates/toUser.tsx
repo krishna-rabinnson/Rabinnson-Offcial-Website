@@ -71,13 +71,13 @@ export const ToUserEmail: React.FC<ToUserEmailProps> = ({ firstName }) => {
                                             <tr>
                                                 <td style={{ paddingBottom: '5px' }}>
                                                     <span style={{ color: '#888888', fontSize: '13px' }}>Call Us: </span>
-                                                    <a href="tel:+919030741174" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>+91 9030741174</a>
+                                                    <a href="tel:+91-96689-01245" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>+91 96689-01245</a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style={{ paddingBottom: '5px' }}>
                                                     <span style={{ color: '#888888', fontSize: '13px' }}>e-Mail: </span>
-                                                    <a href="mailto:startup@rabinnson.com" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>startup@rabinnson.com</a>
+                                                    <a href="mailto:response@rabinnson.com" style={{ color: '#333333', textDecoration: 'none', fontSize: '13px' }}>response@rabinnson.com</a>
                                                 </td>
                                             </tr>
                                             <tr>

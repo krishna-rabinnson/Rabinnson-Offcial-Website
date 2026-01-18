@@ -65,11 +65,11 @@ export async function POST(req: Request) {
 
     try {
       await resend.emails.send({
-        from: 'Test App <onboarding@resend.dev>',
-        to: ['krishnakumahakul@gmail.com'],
+        from: 'Rabinnson <noreply@connect.rabinnson.com>',
+        to: [payload.email,'assitant@connect.rabinnson.com'],
         subject: `New contact message — ${payload.firstName} ${payload.lastName}`,
         html: companyHtml,
-        headers: { 'Reply-To': 'krishnakumahakul@gmail.com' },
+        headers: { 'Reply-To': 'response@rabinnson.com' },
       });
     } catch (err: any) {
       sendErrors.push(`company:${err?.message || String(err)}`);
@@ -78,11 +78,11 @@ export async function POST(req: Request) {
     // Send acknowledgement to user
     try {
       await resend.emails.send({
-        from: 'Test App <onboarding@resend.dev>',
-        to: [payload.email],
+        from: 'Rabinnson <noreply@connect.rabinnson.com>',
+        to: [`${payload.email}`,'assitant@connect.rabinnson.com'],
         subject: 'Thanks for contacting Rabinnson',
         html: userHtml,
-        headers: { 'Reply-To': 'krishnakumahakul@gmail.com' },
+        headers: { 'Reply-To': 'response@rabinnson.com' },
       });
     } catch (err: any) {
       sendErrors.push(`user:${err?.message || String(err)}`);

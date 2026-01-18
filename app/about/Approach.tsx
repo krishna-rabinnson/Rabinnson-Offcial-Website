@@ -1,9 +1,9 @@
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
-import Trends from '@/assets/images/trends.png';
-import Rocket from '@/assets/images/rocket.png';
-import TargetBlue from '@/assets/images/targetBlue.png';
+import Trends from '@/assets/images/trends.webp';
+import Rocket from '@/assets/images/rocket.webp';
+import TargetBlue from '@/assets/images/targetBlue.webp';
 
 export default function Approach() {
     return (

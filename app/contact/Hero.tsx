@@ -2,10 +2,10 @@ import HeroBackground from "@/components/HeroBackground";
 import Typography from "@/components/typography";
 import Button from "@/components/button";
 import Icons from "@/components/icon";
-import Avatar1 from '@/assets/images/avatar-1.png';
-import Avatar2 from '@/assets/images/avatar-2.png';
-import Avatar3 from '@/assets/images/avatar-3.png';
-import Avatar4 from '@/assets/images/avatar-4.png';
+import Avatar1 from '@/assets/images/avatar-1.webp';
+import Avatar2 from '@/assets/images/avatar-2.webp';
+import Avatar3 from '@/assets/images/avatar-3.webp';
+import Avatar4 from '@/assets/images/avatar-4.webp';
 import Image from "next/image";
 export default function Hero() {
     return (
@@ -37,7 +37,7 @@ export default function Hero() {
                         </div>
                         <div className="flex flex-col items-start gap-[4px]">
                             <Typography color="#070707" size={20} weight={700}>Live Chat</Typography>
-                            <Typography color="#070707" size={14} weight={400} className="underline">startup@rabinnson.com</Typography>
+                            <Typography color="#070707" size={14} weight={400} className="underline">response@rabinnson.com</Typography>
                         </div>
                     </div>
                     <div className="flex items-center gap-[24px]">
@@ -46,7 +46,7 @@ export default function Hero() {
                         </div>
                         <div className="flex flex-col items-start gap-[4px]">
                             <Typography color="#070707" size={20} weight={700}>Visit Us</Typography>
-                            <Typography color="#070707" size={14} weight={400} className="underline">startup@rabinnson.com</Typography>
+                            <Typography color="#070707" size={14} weight={400} className="underline">response@rabinnson.com</Typography>
                         </div>
                     </div>
                     <div className="flex items-center gap-[24px]">
@@ -55,7 +55,7 @@ export default function Hero() {
                         </div>
                         <div className="flex flex-col items-start gap-[4px]">
                             <Typography color="#070707" size={20} weight={700}>Call Us</Typography>
-                            <Typography color="#070707" size={14} weight={400} className="underline">+91 9030741174</Typography>
+                            <Typography color="#070707" size={14} weight={400} className="underline">+91 96689-01245</Typography>
                         </div>
                     </div>
                 </div>

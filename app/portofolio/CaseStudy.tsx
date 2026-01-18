@@ -2,7 +2,7 @@ import Accordion, { AccordionData } from "@/components/accordion";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
 import Image from "next/image";
-import CaseStudyImg from '@/assets/images/CaseStudy.png'
+import CaseStudyImg from '@/assets/images/CaseStudy.webp'
 
 export default function CaseStudy() {
     const accordionData: AccordionData[] = [

@@ -13,10 +13,10 @@ import Typography from "@/components/typography";
 import Button from "@/components/button";
 import { ImageWithFallback } from "@/components/Starc/ImageWithFallback";
 
-import Avatar1 from '@/assets/images/avatar-1.png';
-import Avatar2 from '@/assets/images/avatar-2.png';
-import Avatar3 from '@/assets/images/avatar-3.png';
-import Avatar4 from '@/assets/images/avatar-4.png';
+import Avatar1 from '@/assets/images/avatar-1.webp';
+import Avatar2 from '@/assets/images/avatar-2.webp';
+import Avatar3 from '@/assets/images/avatar-3.webp';
+import Avatar4 from '@/assets/images/avatar-4.webp';
 
 // Custom hook for scroll animation
 const useScrollAnimation = () => {
