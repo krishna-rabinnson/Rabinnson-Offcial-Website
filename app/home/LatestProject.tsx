@@ -1,11 +1,11 @@
 import Icons from "@/components/icon";
 import Tag from "@/components/Tag";
 import Typography from "@/components/typography";
-import Image from "next/image";
-import Eclipse from '@/assets/images/lates-project-eclipse.png';
-import Portofolio1 from '@/assets/images/consysmindlanding.png';
-import Portofolio2 from '@/assets/images/fintech-photo.webp';
-import Portofolio3 from '@/assets/images/y2ff.png';
+import { OptimizedImage } from "@/components/OptimizedImage";
+import Eclipse from '@/assets/images/lates-project-eclipse.webp';
+import Portofolio1 from '@/assets/images/Portfolio-1.webp';
+import Portofolio2 from '@/assets/images/Portfolio-2.webp';
+import Portofolio3 from '@/assets/images/Portfolio-3.webp';
 
 export default function LatestProject() {
     return (
@@ -28,7 +28,7 @@ export default function LatestProject() {
             <div className="mt-[40px] md:mt-[64px] flex flex-col gap-3 sm:gap-4 md:gap-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <Image
+                        <OptimizedImage
                             src={Portofolio1}
                             alt="Consysmind"
                             fill
@@ -37,7 +37,7 @@ export default function LatestProject() {
                         />
                     </div>
                     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <Image
+                        <OptimizedImage
                             src={Portofolio2}
                             alt="Fintech"
                             fill
@@ -47,7 +47,7 @@ export default function LatestProject() {
                     </div>
                 </div>
                 <div className="relative aspect-[16/9] sm:aspect-[16/7] md:aspect-[21/8] lg:aspect-[21/7] w-full overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <Image
+                    <OptimizedImage
                         src={Portofolio3}
                         alt="Y2F Hub"
                         fill
